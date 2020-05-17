@@ -1,0 +1,1133 @@
+@charset "utf-8";
+@-webkit-keyframes loginmove{0%{-webkit-transform:scale(1)}100%{-webkit-transform:scale(1.05)}}
+@-moz-keyframes loginmove{0%{-moz-transform:scale(1)}100%{-moz-transform:scale(1.05)}}
+@keyframes loginmove{
+	0%{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1)}
+	100%{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input
+{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:"microsoft yahei";vertical-align:baseline;}
+table, caption, tbody, tfoot, thead, tr, th, td
+{margin:0;padding:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+input {border:none;}
+ul{list-style:none;}
+label{/*cursor:pointer;*/color:#666;}
+
+body {font-size:75%;color:#222;background:#fff;font-family:Helvetica, Arial,"microsoft yahei", sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:bold;color:#000;}
+h1 {font-size:36px;font-family:"microsoft yahei", sans-serif;}
+h2 {font-size:45px;float:left;color:#CCC;margin-top:10px;font-weight:normal;}
+h3 {font-size:16px;margin:8px 0;margin:8px 0 7px\0;color:#000;}
+h4 {font-size:14px;margin:8px 0;color:#666;}
+h5 {font-size:12px;margin:8px 0;color:#666;}
+h6 {font-size:12px;margin:8px 0;}
+
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {color:#666;}
+a:focus, a:hover {text-decoration:underline;}
+a {
+	color:#666;
+	text-decoration:none;
+	cursor:pointer;
+	blr:expression(this.onFocus=this.blur());
+	outline:none;
+}
+span{color:#666;}
+textarea{overflow:hidden;}
+fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+legend {font-weight:bold;font-size:1.2em;}
+
+input.text:focus, input.title:focus, textarea:focus, select:focus {border:1px solid #666;}
+input.text, input.title {width:300px;padding:5px;}
+input.title {font-size:1.5em;}
+
+input.text, input.title, textarea, select {margin:0 0;border:1px solid #dedede;font-size:12px;color:#666;font-family: Helvetica,Arial,"microsoft yahei",sans-serif;}
+select{width:120px;float:left;padding:2px;height:25px;line-height:25px;}
+    input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    border: 1px solid #CCC!important;
+    }
+
+.right{float:right !important;}
+.row {float:left; width:100%;}
+.left{float:left !important;}
+.clear{clear:both;}
+.overflow_hidden{overflow:hidden;clear:both;}
+.display_block{display:block;}
+.postion_relative{position: relative;}
+.cursor_pointer{cursor: pointer!important;}
+.bg_image_none{background-image: none !important;}
+.text_overflow{overflow: hidden;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
+
+.border_bottom{border-bottom:solid 1px #DEDEDE;}
+.border_bottom_dash{border-bottom:dashed 1px #DEDEDE;}
+.border_top{border-top:solid 1px #DEDEDE;}
+.noborder{border:none !important;}
+.border_top_none{border-top: none !important;}
+.border_bottom_none{border-bottom: none !important;}
+
+.margin_left_none{margin-left:0 !important;}
+.margin_right_none{margin-right:0 !important;}
+.margin_bottom_none{margin-bottom:0 !important;}
+.margin_top_none{margin-top:0 !important;}
+.padding_bottom_none{padding-bottom:0 !important;}
+
+
+.graybold {font-weight:bold;}
+.black{color:#000 !important;}
+.blackbold {font-weight:bold;color:#000 !important;}
+.black_333{color:#333333!important;}
+.gray_666{color:#666666!important;}
+.lightgray{color:#999 !important;}
+.lightgray *{color:#999;}
+.lightgray_ccc{color: #ccc;}
+
+
+a.highlight, .highlight, .highlight a,a.blue{font-weight:normal;}
+a.highlightheader{font-weight:bold;font-size:14px;}
+a.bluebold, .bluebold ,a.navbar_titer{font-weight:bold;}
+
+
+span.red {color:red;}
+.script_red{color: #ff0000 !important;}
+.orange{color:#f17842!important;}
+
+
+.green{font-weight:normal;color:#390 !important;}
+.greenbold{color:#390;font-weight:bold;}
+
+
+a.highlight, .highlight, .highlight a{color:#09C !important;}
+a.highlightheader{color:#09C;}
+a.blue{color:#09C;}
+a.bluebold, .bluebold ,a.navbar_titer{color:#09C;}
+.dark_blue{color: #00607f !important;}
+
+/*登陆页样式  maqt 开始*/
+.index{
+	height:100%;
+	max-height:auto;
+	max-width:auto;
+	/*width:100%;
+	
+	font-family:"microsoft yahei";*/
+}
+.login_conatiner{
+	height: 100%;
+	/* min-height:669px;
+     min-width: 1070px;*/
+	width:100%!important;
+
+	position: relative;
+}
+.login_img_01{
+
+	left: 0;
+	/*   	min-height:600px;
+        min-width: 960px;*/
+	max-height:auto;
+	max-width:auto;
+	position: absolute;
+	width:100%;
+	top: 0;
+	z-index: -1;
+
+	-webkit-animation:loginmove 5s forwards;
+	-moz-animation:loginmove 5s forwards;
+	animation:loginmove 5s forwards;
+}
+
+#login_main_conatiner{
+	left:0;
+	top:0;
+	width:100%;
+	z-index:2;
+	position: relative;
+}
+
+.login_logo{
+	float:left;
+	margin:0 0 0 3px;
+}
+.login_logo_title{
+	float:left;
+	margin:0 0 0 3px;
+}
+.login_logo_bg{
+	float:left;
+	margin:0;
+	width: 250px;
+	height: 148px;
+	background: url(../image/logo-pc.png) no-repeat 0 0;
+}
+.floor1{
+	width:calc(100% - 244px);
+	margin:0 122px;
+}
+.floor1 .logo{
+	float: left;
+	width: 100%;
+	height: 148px;
+}
+.floor1 .logo .line{
+	height: 33px;
+	border-left:1px solid #fff;
+	float: left;
+	width:20px;
+	margin:57px 0 0 0px;
+}
+.floor1 .logo .title{
+	float:left;
+	font-size:28px;
+	color:#fff;
+	margin-top:50px;
+}
+.floor1 h1{
+	display:table-cell;
+	padding-left:5%
+}
+.floor1 .text{
+	display:block;
+}
+.floor1 .text>div{
+	display:table-cell;
+	vertical-align:middle;
+	padding-left:7%
+}
+.shadow-bar{
+	position:relative;
+	width:100%;
+	height:165px;
+	background:url(../image/shadow-bg.png) repeat-x 0 0;
+}
+.dp_02{
+	font-size:24px;
+	height:43px;
+	line-height:43px;
+	margin-top:10px;
+	width:437px;
+	background: url(../image/shadow_bar_02.png) 0 0 no-repeat\9;
+}
+.login_box_title{
+	margin-top:66px;
+	font-size:22px;
+	color:#828888;
+	float:left;
+}
+.floor2{
+	position:fixed;
+	width: 393px;
+	right:35%;
+	bottom:35%;
+}
+.box-open{
+	overflow: hidden;
+}
+/*.box-open .login_box_up{*/
+/*display:none;*/
+/*}*/
+.content_login_box{
+	float: left;
+	width: 345px;
+	border: 1px solid #dedede;
+	background: rgba(255,255,255,0.8);
+}
+.toggle_btn{
+	float:left;
+	width:49px;
+	height:39px;
+	line-height:39px;
+	color:#999;
+	border:1px solid #dadbdc;
+	font-size:14px;
+	text-align:center;
+	border-left:none;
+	background:url(../image/content_login_box_bg.png) scroll repeat 0 0 transparent;
+}
+.toggle_btn:hover{
+	cursor:pointer;
+}
+.plus{
+	width: 17px;
+	height: 17px;
+	float: left;
+	margin:11px  0 0 15px;
+	background: url(../image/plus.png) no-repeat 0 0;
+}
+.minus{
+	width: 17px;
+	height: 17px;
+	float: left;
+	margin:11px  0 0 15px;
+	background: url(../image/minus.png) no-repeat 0 0;
+}
+.container_space{
+	width: 1090px;
+	height: 515px;
+	margin: 0 auto;
+}
+.login_box_up{
+	float: left;
+	width: 345px;
+
+	padding-bottom: 10px;
+}
+.login_box_title{
+	float: left;
+	width: 295px;
+	height: 42px;
+	margin: 11px 0 1px 21px;
+	_margin-left: 11px;
+}
+.login_box_title_name{
+	float: left;
+	height: 20px;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	font-weight: bold;
+}
+.login_box_title_notice{
+	float: left;
+	width: 278px;
+	margin: 2px 0 0 12px;
+}
+.login_box_input{
+	float: left;
+	width: calc(100% - 40px);
+	height: 50px;
+	line-height: 50px;
+	border-radius:10px;
+	padding: 0 10px;
+	border: 1px solid #dedede;
+	margin: 9px 0 1px 21px;
+	font-size: 14px;
+	color: #999;
+	box-shadow: none;
+	box-sizing:border-box;
+}
+.pic-input{
+	padding-left:57px;
+	box-sizing:border-box;
+}
+.user-pic{
+	background-image:url(../images/user-pic.png);
+	background-repeat:no-repeat;
+	background-position:20px center;
+}
+.password-pic{
+	background-image:url(../images/password-pic.png);
+	background-repeat:no-repeat;
+	background-position:20px center;
+}
+.dtm-pic{
+	background-image:url(../images/dtm-pic.png);
+	background-repeat:no-repeat;
+	background-position:20px center;
+}
+.login_box_input.err {
+	border-color:#cd8480;
+	background-color:#fff2f2;
+}
+.down_link_choice{
+	float: left;
+	width: calc(100% - 42px);
+	margin: 16px 0 8px 21px;
+}
+.login_box_checkbox{
+	float: left;
+	margin: 3px 6px 0 1px;
+	*margin-top: -2px;
+	_margin-top: -2px;
+}
+.login_box_checkbox_label{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	color: #666;
+	font-size:14px;
+}
+.login_box_sepline{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	*line-height: 14px;
+	_line-height: 14px;
+	color: #dedede;
+	margin: 0 9px 0 9px;
+}
+.login_box_psd{
+	float: right;
+	height: 18px;
+	line-height: 18px;
+	color: #336699;
+	font-size:14px;
+	font-family:"Microsoft YaHei UI";
+}
+
+.login_box_down{
+	float: left;
+	width: 100%;
+	padding-bottom:4px;
+}
+.ide_code{
+	float: left;
+	width: 265px;
+	margin: 12px 0 0 21px;
+	_margin-left: 11px;
+}
+.ide_code_label{
+	float: left;
+	width: 48px;
+	height: 28px;
+	line-height: 28px;
+	text-align: right;
+	color: #999;
+}
+.ide_code_input{
+	float: left;
+	width: 54px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #dedede;
+	padding: 0 5px;
+}
+.ide_code_input.err {
+	border-color:#cd8480;
+	background-color:#fff2f2;
+}
+.ide_code_image{
+	height: 45px;
+	display:block;
+	
+	margin: 2px auto 0px;
+}
+.ide_code_next{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	color: #09c;
+	margin: 4px 0 0 8px;
+	white-space: nowrap;
+}
+.login_box_notice{
+	float: left;
+	width: 259px;
+	line-height: 22px;
+	padding: 8px 18px;
+}
+.login_footer_01{
+	position: absolute;
+	left: 50%;
+	margin: 604px 0 0 -480px!important;
+}
+.login_box_tab {
+	width:100%;
+	height:50px;
+	float:left;
+	border-radius:3px 3px 0 0;
+	margin:0 0 10px;
+}
+.notice-alert{
+	float:left;
+	margin:0 0 0 20px;
+	color:#c8181e;
+	}
+.login_box_qr{
+	padding:15px 35px 6px;
+	width:275px;
+	}
+.qr-box-1-4{
+	float:left;
+	width:115px;
+	height:155px;
+	}
+.qr-box-1-4 .text-box{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	color:#666;
+	line-height:22px;
+	}
+.login_box_tab a{
+	width:calc((100% - 1px) / 2);
+	height:49px;
+	text-align:center;
+	border-bottom:1px solid #dedede;
+	display:block;
+	float:left;
+	line-height:49px;
+	background-color:#f5f6f7;
+	cursor:pointer;
+	font-family:"Microsoft YaHei";
+	font-size:15px;
+	text-decoration:none;
+	font-weight:lighter;
+	color:#69696b;
+}
+.login_box_tab a:first-child{
+	border-right:1px solid #dedede;
+}
+.login_box_tab a:hover{
+	text-decoration:none;
+}
+.login_box_tab a.active{
+	height:50px;
+	border-bottom:none;
+	background:none;
+}
+.login_box_tab a.active:hover{
+	cursor:auto;
+}
+.login_code{
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin:36px 0 0 calc(50% - 90px);
+}
+.login_code_notice{
+	float: left;
+	width: 100%;
+	text-align:center;
+	margin:21px 0 0 0;
+	color:#666;
+	padding-bottom:9px;
+}
+.margin_top_20{
+	margin-top:20px;
+}
+.code_row{
+	float: left;
+	margin:14px 0 0 20px;
+	width:calc(100% - 38px)!important;
+}
+.code_label{
+	float: left;
+	line-height: 28px;
+	margin:0 10px 6px 0;
+}
+.code_input{
+	margin:0;
+	width: calc(100% - 126px);
+	height:50px;
+	line-height:50px;
+	color:#999;
+	padding:0 20px;
+}
+.code_img_box{
+	height:50px;
+	width:115px;
+	float:left;
+	margin:0 0 0 10px;
+	border: 1px solid #dedede;
+	background-color:#fff;
+	border-radius:10px;
+	box-sizing:border-box;
+	display:block;
+	text-decoration:none;
+	cursor:pointer;
+}
+.code_img{
+	margin:10px auto;
+	float:none;
+	clear:both;
+	height:30px;
+	width:70px;
+	display:block;
+}
+.code_link{
+	float: left;
+	color:#2379bc;
+	line-height: 34px;
+	margin-left:10px;
+}
+.new_student {
+	font-size:14px;
+	font-family:"Microsoft YaHei UI";
+	color:#666;
+	line-height:23px;
+	padding: 0px 18px;
+	width: 100%;
+	margin: 3px 0 0;
+	box-sizing: border-box;
+	float:left;
+}
+.new_student span{
+	font-size:14px;
+	font-family:"Microsoft YaHei UI";
+	font-weight:bold;
+}
+.new_student a {
+	font-size:12px;
+	font-family:"Microsoft YaHei UI";
+	color:#2379bc;
+	line-height:18px;
+}
+.landing_btn_bg{
+	float: left;
+	background-image:none;
+	background-color:#DE2910;
+	width: calc(100% - 40px);
+	line-height: 1;
+	padding:10px 0;
+	cursor: pointer;
+	border:1px solid #1b245c;
+	font-family:"Microsoft YaHei";
+	font-size:16px;
+	height:50px;
+	line-height:30px;
+	border-radius:10px;
+	margin: 10px 0 10px 21px;
+	color:#fff;
+	text-align:center;
+	position:relative;
+	box-sizing: border-box;
+}
+.login_box_landing_btn{
+	float: left;
+	background: transparent;
+	width: 100%;
+	height: 50px;
+	cursor: pointer;
+	font-family:"Microsoft YaHei";
+	font-size:18px;
+	border-radius:10px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	box-sizing: border-box;
+}
+.login_way {
+	font-size:12px;
+	font-family:"Microsoft YaHei UI";
+	color:#666;
+	width:164px;
+	margin:4px 0 0 calc(50% - 82px);
+	float:left;
+}
+.login_by_tencent {
+	background: transparent url("../image/login_tencent_icon.png") no-repeat scroll 0 0;
+	color: #666;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin: 5px 0 0;
+	padding: 0 0 0 20px;
+	font-size:12px;
+}
+.login_by_wechat {
+	background: transparent url("../image/login_wechat_icon.png") no-repeat scroll 0 0;
+	color: #666;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	margin: 5px 0 0;
+	padding: 0 0 0 24px;
+	font-size:12px;
+}
+/*页脚*/
+#footer{
+	position:fixed;
+	bottom: 0px;
+	width:100%;
+	height:80px;
+	background: transparent url("../image/shadow-down-bg.png");
+}
+.login_footer{
+	width:calc(100% - 244px);
+	margin:55px 122px 0;
+	float:left;
+}
+.login_footer span{
+	color: #fff;
+	font-size:16px;
+}
+.login_box_checkbox{
+	float: left;
+	width:14px;
+	height:14px;
+	position:relative;
+	margin: 3px 6px 0 1px;
+	*margin-top: 1px;
+}
+.login_title{
+	float: left;
+	margin-left:21px;
+	margin-top:24px;
+}
+.login_title .name{
+	color:#39427d;
+	font-size: 22px;
+	font-family:"Microsoft YaHei UI";
+	float: left;
+}
+.login_title .name1{
+	color:#39427d;
+	font-size: 22px;
+	font-family:"Microsoft YaHei UI";
+	float: left;
+}
+.login_title .notice{
+	font-size: 12px;
+	color:red;
+	float: left;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+.school-motto{
+	float: right;
+	margin-top: 50px;
+}
+.login-tab-con {
+	height:41px;
+	margin:0 0 3px;
+}
+.login-tab-con .tab-inside{
+	height:41px;
+	width:100%;
+	line-height:47px;
+	font-size:16px;
+	display:block;
+	border-right:1px solid #dedede;
+	border-bottom:1px solid #dedede;
+	color:#333;
+	text-align: center;
+	float:left;
+	background-color:#f5f5f5;
+}
+.login-tab-con .tab-inside.active{
+	background:none;
+	border-bottom:none; 
+}
+.error{padding:0 20px;width:100%;float:left;}
+.error .notice{color:#E62000;margin:5px 0 0;display:block;float:left;}
+.login-qr-box{
+	width:100%;
+}
+
+.login-qr-title{
+	width:100%;
+	text-align: center;
+	line-height:30px;
+	font-size:14px;
+	margin:20px 0 15px;
+}
+.qr-code-box{
+	width:152px;
+	margin:0 auto;
+}
+.qr-code-box img{
+	height:152px;
+	width:152px;
+	margin:0 auto;
+}
+.qr-code-text{
+	text-align: center;
+	width:100%;
+	line-height:22px;
+	font-size:14px;
+	margin:15px 0 0;
+}
+.qr-code-help{
+	text-align: center;
+	width:152px;
+	line-height:22px;
+	font-size:12px;
+}
+@media screen and (max-width: 1250px){
+	.login_footer{
+		width:calc(100% - 40px);
+		margin:55px 20px 0;
+		float:left;
+	}
+	.school-motto{display:none;}
+}
+
+@media screen and (max-width: 1023px) {
+	.login_box_qr{
+		padding:15px 0;
+		}
+	.qr-box-1-4{
+	float:left;
+	width:25%;
+	height:155px;
+	text-align:center;
+	}
+	.floor1 .logo .line,
+	.floor1 .logo .title,
+	.toggle_btn{display: none;}
+	.shadow-bar{
+		height:77px;
+		background:url(../image/shadow-mobile-bg.png) repeat-x 0 0;
+
+	}
+	#login_main_conatiner{
+		position:static;
+		width:100%;
+	}
+	.logo_light{
+		float:left;
+		width: 100%;
+		height:75px;
+		margin-top:0px;
+		background:url(../image/logo-dark-l.png) no-repeat center 0;
+		background-size:auto 70px;
+	}
+	.floor2{
+		width: 100%;
+		float: left;
+		padding: 20px;
+		border-radius: 5px;
+		position:static;
+		box-sizing:border-box;
+		height:auto!important;
+		border:none;
+	}
+	.login_conatiner{
+		width:100%!important;
+		float:left;
+		box-sizing:border-box;
+	}
+	.fluid_container{
+		width:100%!important;
+		
+	}
+	.login_box_title{
+		margin-top:0;
+	}
+	.login_checkbox_01{
+		margin-top: 0;
+	}
+	.login_error{
+		margin-top:4px;
+	}
+	.floor2 .user_name{
+		width:100%;
+		margin-top: 10px;
+	}
+	.floor2 .user_name{
+		height:38px;
+	}
+	.floor2 .auth_code_input{
+		width:calc( 100% - 116px );
+	}
+	.floor2 .auth_code_input .login_text_01{
+		width:calc( 100% - 20px );
+		margin-left:10px;
+	}
+	.floor2 .auth_code_img{
+		width:102px;
+	}
+	.floor2 .auth_code_img img{
+		width:62px;
+	}
+	.login_text_01{
+		height: 38px;
+		line-height:40px;
+		width:calc(100% - 55px);
+	}
+	.login_btn_01{
+		height:38px;
+		font-size: 14px;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.login_notice{
+		margin-top: 10px;
+	}
+	.login_icon{
+		margin: 10px 20px 0 10px;
+	}
+	.login_copyright{
+		float: left;
+		word-break: break-all;
+		word-wrap: break-word;
+		margin-top: 10px;
+	}
+	.third_party_box{
+		float:left;
+		width:100%;
+	}
+	.blue_line{
+		margin:12px 0 0;
+	}
+	.third_party_login{
+		margin:10px 0 0 calc(50% - 33px);
+	}
+	.qq_login{
+		background-image:url(../image/qq-login.png);
+		width:20px;
+		height:20px;
+		display:block;
+		float:left;
+		background-size:100%;
+	}
+	.wechat_login{
+		background-image:url(../image/wechat-login.png);
+		width:25px;
+		height:20px;
+		display:block;
+		float:left;
+		margin-left:20px;
+		background-size:100%;
+	}
+	.qq_login:hover{
+		background-image:url(../image/qq-login.png);
+		width:20px;
+		height:20px;
+	}
+	.wechat_login:hover{
+		background-image:url(../image/wechat-login.png);
+		width:25px;
+		height:20px;
+	}
+	.floor1 {
+		width:100%;
+		margin: 0 0;
+	}
+	.floor1 .logo{height:auto;}
+	.floor1 .logo .title{display: none;}
+	.floor2{margin:0;width:100%;padding:0 20px;box-sizing: border-box;}
+	.login_box_up{width:100%;}
+	.content_login_box{margin-top:0;width:100%;box-sizing: border-box;}
+	#footer{display: none;}
+	.login_logo_bg{
+		width:100%;
+		background: center 10px url(../image/logo-mobile.png) no-repeat;
+		height:77px;
+		background-size:auto  54px;
+		margin-top:10px;
+	}
+	.login_box_checkbox{
+		margin: 1px 6px 0 1px;
+	}
+
+}
+@media screen and (max-width: 1023px) {
+	.login_box_qr{
+		padding:10px 0;
+		}
+	.qr-box-1-4{
+	float:left;
+	width:50%;
+	height:145px;
+	text-align:center;
+	}
+}
+.fluid_container {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 0;
+	width:100%!important;
+}
+/*icheck插件标准小checkbox美化样式*/
+/* iCheck plugin Minimal skin, black
+----------------------------------- */
+.icheckbox_minimal,
+.iradio_minimal {
+	display: inline-block;
+	*display: inline;
+	margin: 0;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	background: url(../image/minimal.png) no-repeat;
+	border: none;
+	cursor: pointer;
+}
+
+.icheckbox_minimal {
+	background-position: 0 0;
+}
+.icheckbox_minimal.hover {
+	background-position: -20px 0;
+}
+.icheckbox_minimal.checked {
+	background-position: -40px 0;
+}
+.icheckbox_minimal.disabled {
+	background-position: -60px 0;
+	cursor: default;
+}
+.icheckbox_minimal.checked.disabled {
+	background-position: -80px 0;
+}
+
+.iradio_minimal {
+	background-position: -100px 0;
+}
+.iradio_minimal.hover {
+	background-position: -120px 0;
+}
+.iradio_minimal.checked {
+	background-position: -140px 0;
+}
+.iradio_minimal.disabled {
+	background-position: -160px 0;
+	cursor: default;
+}
+.iradio_minimal.checked.disabled {
+	background-position: -180px 0;
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+	.icheckbox_minimal,
+	.iradio_minimal {
+		background-image: url(../image/minimal@2x.png);
+		-webkit-background-size: 200px 20px;
+		background-size: 200px 20px;
+	}
+}
+/*icheck插件标准小checkbox美化样式*/
+
+@media screen and (max-height:900px){
+	.floor2{
+		top:calc((100% - 160px) * 0.3);
+	}
+}
+@media screen and (max-height:680px){
+	.floor2{
+		top:calc((100% - 470px) * 0.5);
+	}
+}
+@media screen and (max-height:613px){
+
+
+	#footer{
+		bottom:0px;
+	}
+}
+
+/*****************browse***start*****************/
+element.style {
+    position: relative;
+}
+
+.browser {
+    box-sizing: border-box;
+    color: #666;
+    font-family: "Microsoft YaHei UI";
+    font-size: 14px;
+    line-height: 23px;
+    margin: 24px 0 0;
+    padding: 0 18px;
+    width: 100%;
+}
+
+.browser a {
+    background-repeat: no-repeat;
+    color: #666;
+    float: left;
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 25px;
+}
+.firefox_pic {
+    background-image: url("../images/firefox-pic.png");
+}
+
+.browser a {
+    background-repeat: no-repeat;
+    color: #666;
+    float: left;
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 25px;
+}
+.google_pic {
+    background-image: url("../images/google-pic.png");
+}
+/******************360 and ie***end******************/
+
+
+.login_way {
+    color: #666;
+    font-family: "Microsoft YaHei UI";
+    font-size: 12px;
+    margin: 9px 86px 8px ;
+    width: 164px;
+}
+.login_by_tencent {
+    background: transparent url("../image/login_tencent_icon.png") no-repeat scroll 0 0;
+    color: #666;
+    float: left;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    margin: 5px 0 0;
+    padding: 0 0 0 20px;
+}
+.login_box_sepline {
+    color: #dedede;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 9px;
+}
+.new-login-way{
+	width:calc(100% - 40px);
+	float: left;
+	margin:5px 20px 10px;
+}
+.new-login-way .login-way-title{
+	width:100%;
+	float: left;
+	margin:9px 0px 9px;
+}
+.new-login-way .line{
+	width:70px;
+	height:1px;
+	background-color:#edeeee;
+	float: left;
+	margin:12px 0 0;
+	display:block;
+}
+.new-login-way .title{
+	float: left;
+	text-align:center;
+	width:calc(100% - 140px);
+	font-size:14px;
+	color:#999;
+	line-height:24px;
+	height:24px;
+	
+	display:block;
+}
+.login-way-btn{
+	width:100%;
+}
+.login-way-btn a{
+	width:calc(50% - 10px);
+	float:left;
+	border:1px solid #dedede;
+	border-radius:7px;
+	height:36px;
+	display:block;
+	background-color:#fff;
+	box-sizing:border-box;
+	line-height:34px;
+	text-align:left;
+	color:#39427d;
+	font-size:14px;
+	padding:0 0 0 55px;
+	text-decoration: none;
+}

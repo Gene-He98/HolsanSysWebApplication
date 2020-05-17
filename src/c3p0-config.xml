@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <default-config>
+	<property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+	<property name="jdbcUrl">jdbc:sqlserver://127.0.0.1:1433;databasename=DB_HolsanSys</property>
+	<property name="user">sa</property>
+	<property name="password">19980711</property>
+    <property name="initialPoolSize">10</property>
+    <property name="maxIdleTime">30</property>
+    <property name="maxPoolSize">100</property>
+    <property name="minPoolSize">10</property>
+  </default-config>
+</c3p0-config>
